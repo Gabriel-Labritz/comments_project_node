@@ -1,0 +1,12 @@
+<div class="comments-form-container">
+    <a href="/comments/dashboard">Voltar</a>
+    <h1>Editando um comentário</h1>
+    <form action="/comments/edit" method="post">
+        <input type="hidden" name="id" value="{{comment.id}}">
+        <div class="form-control">
+            <label for="title">Comentário:</label>
+            <input type="text" name="title" value="{{comment.title}}">
+        </div>
+        <input type="submit" value="Editar">
+    </form>
+</div>
